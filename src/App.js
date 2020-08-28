@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Fragment>
+			<Navbar />
+			<iframe
+				title='dashboard'
+				src='https://app.powerbi.com/view?r=eyJrIjoiNjgwNTQ1NmItMmY2MC00Y2YxLTkyY2UtYTJmODk2MjY2MzkxIiwidCI6IjU4NjNjMjQ5LWU3MWQtNDgyMy05MzE2LWNjOGFjNjQ4Y2FhMSIsImMiOjEwfQ%3D%3D'
+				frameborder='0'
+				allowFullScreen='true'
+			/>
+			<Footer />
+		</Fragment>
+	)
 }
 
-export default App;
+export default App
